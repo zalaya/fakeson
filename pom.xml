@@ -8,8 +8,12 @@
 
     <groupId>xyz.zalaya</groupId>
     <artifactId>fakeson</artifactId>
-    <version>0.0.1-SNAPSHOT</version>
+    <version>${fakeson.version}</version>
     <packaging>pom</packaging>
+
+    <properties>
+        <fakeson.version>0.0.1-SNAPSHOT</fakeson.version>
+    </properties>
 
     <modules>
         <module>fakeson-source</module>

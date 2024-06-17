@@ -9,7 +9,7 @@
     <parent>
         <groupId>xyz.zalaya</groupId>
         <artifactId>fakeson-source</artifactId>
-        <version>0.0.1-SNAPSHOT</version>
+        <version>${fakeson.version}</version>
     </parent>
 
     <artifactId>fakeson-source-application</artifactId>
