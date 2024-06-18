@@ -13,12 +13,12 @@
 
     <properties>
         <fakeson.version>0.0.1-SNAPSHOT</fakeson.version>
+        <lombok.version>1.18.32</lombok.version>
     </properties>
 
     <modules>
-        <module>fakeson-properties</module>
-        <module>fakeson-scripts</module>
         <module>fakeson-source</module>
         <module>fakeson-docker</module>
+        <module>fakeson-scripts</module>
     </modules>
 </project>
