@@ -8,9 +8,9 @@
 
     <parent>
         <groupId>xyz.zalaya</groupId>
-        <artifactId>fakeson-source</artifactId>
+        <artifactId>fakeson-source-products</artifactId>
         <version>${fakeson.version}</version>
     </parent>
 
-    <artifactId>fakeson-source-infrastructure</artifactId>
+    <artifactId>fakeson-source-products-domain</artifactId>
 </project>
