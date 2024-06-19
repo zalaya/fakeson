@@ -14,6 +14,7 @@
     <properties>
         <fakeson.version>0.0.1-SNAPSHOT</fakeson.version>
         <lombok.version>1.18.32</lombok.version>
+        <springboot.version>3.3.0</springboot.version>
     </properties>
 
     <modules>
