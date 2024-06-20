@@ -16,8 +16,8 @@
     <packaging>pom</packaging>
 
     <modules>
-        <module>fakeson-source-products-application</module>
         <module>fakeson-source-products-domain</module>
+        <module>fakeson-source-products-application</module>
         <module>fakeson-source-products-infrastructure</module>
     </modules>
 </project>
