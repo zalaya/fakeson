@@ -16,7 +16,6 @@
     <packaging>pom</packaging>
 
     <modules>
-        <module>fakeson-source-users-adapter</module>
         <module>fakeson-source-users-domain</module>
         <module>fakeson-source-users-application</module>
         <module>fakeson-source-users-infrastructure</module>
