@@ -12,7 +12,7 @@
         <version>${fakeson.version}</version>
     </parent>
 
-    <artifactId>fakeson-source-products-application</artifactId>
+    <artifactId>fakeson-source-products-adapter</artifactId>
 
     <dependencies>
         <dependency>
@@ -25,17 +25,10 @@
             <artifactId>fakeson-source-products-infrastructure</artifactId>
             <version>${fakeson.version}</version>
         </dependency>
+        <dependency>
+            <groupId>xyz.zalaya</groupId>
+            <artifactId>fakeson-source-products-application</artifactId>
+            <version>${fakeson.version}</version>
+        </dependency>
     </dependencies>
-    <build>
-        <plugins>
-            <plugin>
-                <groupId>org.apache.maven.plugins</groupId>
-                <artifactId>maven-compiler-plugin</artifactId>
-                <configuration>
-                    <source>16</source>
-                    <target>16</target>
-                </configuration>
-            </plugin>
-        </plugins>
-    </build>
 </project>

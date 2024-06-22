@@ -16,7 +16,6 @@
     <packaging>pom</packaging>
 
     <modules>
-        <module>fakeson-source-users</module>
         <module>fakeson-source-products</module>
     </modules>
 

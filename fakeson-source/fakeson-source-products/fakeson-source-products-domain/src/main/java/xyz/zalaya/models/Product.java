@@ -1,17 +1,15 @@
 package xyz.zalaya.models;
 
-import xyz.zalaya.models.enums.ProductBrand;
-import xyz.zalaya.models.enums.ProductCategory;
-import xyz.zalaya.models.enums.ProductColor;
-import xyz.zalaya.models.enums.ProductStock;
+import lombok.AllArgsConstructor;
+import lombok.Getter;
 
+@Getter
+@AllArgsConstructor
 public class Product {
-    private Integer id;
+
+    private Long id;
     private String name;
     private String description;
     private Double price;
-    private ProductBrand brand;
-    private ProductCategory category;
-    private ProductStock stock;
-    private ProductColor color;
+
 }

@@ -18,9 +18,7 @@
     </properties>
 
     <modules>
-        <module>fakeson-database</module>
         <module>fakeson-source</module>
-        <module>fakeson-docker</module>
         <module>fakeson-scripts</module>
     </modules>
 </project>

@@ -19,5 +19,6 @@
         <module>fakeson-source-products-domain</module>
         <module>fakeson-source-products-application</module>
         <module>fakeson-source-products-infrastructure</module>
+        <module>fakeson-source-products-adapter</module>
     </modules>
 </project>
