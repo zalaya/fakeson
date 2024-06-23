@@ -20,5 +20,6 @@
     <modules>
         <module>fakeson-source</module>
         <module>fakeson-scripts</module>
+        <module>fakeson-archetype</module>
     </modules>
 </project>
