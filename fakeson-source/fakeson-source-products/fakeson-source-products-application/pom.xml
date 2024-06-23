@@ -25,6 +25,11 @@
             <artifactId>fakeson-source-products-infrastructure</artifactId>
             <version>${fakeson.version}</version>
         </dependency>
+        <dependency>
+            <groupId>xyz.zalaya</groupId>
+            <artifactId>fakeson-source-products-adapter</artifactId>
+            <version>${fakeson.version}</version>
+        </dependency>
     </dependencies>
     <build>
         <plugins>
