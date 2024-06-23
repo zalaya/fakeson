@@ -8,7 +8,7 @@
 
     <parent>
         <groupId>xyz.zalaya</groupId>
-        <artifactId>fakeson-source-products</artifactId>
+        <artifactId>fakeson-source-products-api</artifactId>
         <version>${fakeson.version}</version>
     </parent>
 
