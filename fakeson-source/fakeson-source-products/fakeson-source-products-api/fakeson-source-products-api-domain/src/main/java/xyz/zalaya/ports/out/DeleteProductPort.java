@@ -1,7 +1,9 @@
 package xyz.zalaya.ports.out;
 
-import xyz.zalaya.ports.Port;
+import xyz.zalaya.models.Product;
 
-public interface DeleteProductPort extends Port<Long, Void> {
+public interface DeleteProductPort {
+
+    void delete(Product product);
 
 }
