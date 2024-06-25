@@ -8,48 +8,18 @@
 
     <groupId>xyz.zalaya</groupId>
     <artifactId>fakeson</artifactId>
-    <version>0.0.1-SNAPSHOT</version>
+    <version>${fakeson.version}</version>
+
+    <packaging>pom</packaging>
+
+    <modules>
+        <module>fakeson-source</module>
+        <module>fakeson-scripts</module>
+    </modules>
 
     <properties>
-        <java.version>17</java.version>
-        <springboot.version>3.3.1</springboot.version>
+        <fakeson.version>0.0.1-SNAPSHOT</fakeson.version>
+        <spring-boot.version>3.3.1</spring-boot.version>
         <lombok.version>1.18.32</lombok.version>
     </properties>
-
-    <build>
-        <plugins>
-            <plugin>
-                <groupId>org.springframework.boot</groupId>
-                <artifactId>spring-boot-maven-plugin</artifactId>
-                <version>${springboot.version}</version>
-                <configuration>
-                    <excludes>
-                        <exclude>
-                            <groupId>org.projectlombok</groupId>
-                            <artifactId>lombok</artifactId>
-                            <version>${lombok.version}</version>
-                        </exclude>
-                    </excludes>
-                </configuration>
-            </plugin>
-        </plugins>
-    </build>
-
-    <dependencies>
-        <dependency>
-            <groupId>org.springframework.boot</groupId>
-            <artifactId>spring-boot-devtools</artifactId>
-            <version>${springboot.version}</version>
-        </dependency>
-        <dependency>
-            <groupId>org.springframework.boot</groupId>
-            <artifactId>spring-boot-starter</artifactId>
-            <version>${springboot.version}</version>
-        </dependency>
-        <dependency>
-            <groupId>org.projectlombok</groupId>
-            <artifactId>lombok</artifactId>
-            <version>${lombok.version}</version>
-        </dependency>
-    </dependencies>
 </project>
