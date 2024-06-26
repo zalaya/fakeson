@@ -8,16 +8,9 @@
 
     <parent>
         <groupId>xyz.zalaya</groupId>
-        <artifactId>fakeson-source-products</artifactId>
+        <artifactId>fakeson-source-products-api</artifactId>
         <version>${fakeson.version}</version>
     </parent>
 
-    <artifactId>fakeson-source-products-api</artifactId>
-    <packaging>pom</packaging>
-
-    <modules>
-        <module>fakeson-source-products-api-infrastructure</module>
-        <module>fakeson-source-products-api-domain</module>
-        <module>fakeson-source-products-api-application</module>
-    </modules>
+    <artifactId>fakeson-source-products-api-infrastructure</artifactId>
 </project>
