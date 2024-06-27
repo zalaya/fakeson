@@ -1,9 +1,15 @@
 package xyz.zalaya.entity;
 
 import jakarta.persistence.*;
+import lombok.AllArgsConstructor;
+import lombok.Getter;
+import lombok.NoArgsConstructor;
 
 @Entity
 @Table(name = "products", schema = "fakeson_source_products")
+@Getter
+@AllArgsConstructor
+@NoArgsConstructor
 public class ProductEntity {
 
     @Id

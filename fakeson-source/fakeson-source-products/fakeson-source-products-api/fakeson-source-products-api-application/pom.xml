@@ -13,4 +13,17 @@
     </parent>
 
     <artifactId>fakeson-source-products-api-application</artifactId>
+
+    <dependencies>
+        <dependency>
+            <groupId>xyz.zalaya</groupId>
+            <artifactId>fakeson-source-products-api-domain</artifactId>
+            <version>${fakeson.version}</version>
+        </dependency>
+        <dependency>
+            <groupId>xyz.zalaya</groupId>
+            <artifactId>fakeson-source-products-api-infrastructure</artifactId>
+            <version>${fakeson.version}</version>
+        </dependency>
+    </dependencies>
 </project>
