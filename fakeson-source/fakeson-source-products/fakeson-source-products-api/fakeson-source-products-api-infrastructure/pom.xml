@@ -25,5 +25,10 @@
             <artifactId>spring-boot-starter-web</artifactId>
             <version>${spring-boot.version}</version>
         </dependency>
+        <dependency>
+            <groupId>xyz.zalaya</groupId>
+            <artifactId>fakeson-source-products-api-domain</artifactId>
+            <version>${fakeson.version}</version>
+        </dependency>
     </dependencies>
 </project>

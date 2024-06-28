@@ -1,7 +1,9 @@
 package xyz.zalaya.port.in;
 
+import xyz.zalaya.model.ProductDomain;
+
 public interface DeleteProductPort {
 
-    void delete(Long id);
+    ProductDomain delete(Long id);
 
 }

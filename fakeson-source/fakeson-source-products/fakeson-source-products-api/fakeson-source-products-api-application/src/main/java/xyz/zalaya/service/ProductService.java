@@ -28,12 +28,14 @@ public class ProductService implements CreateProductPort, GetProductPort, Update
     }
 
     @Override
-    public void delete(Long id) {
-        if (!repository.existsById(id)) {
-            throw new ProductNotFoundException("Product with id " + id + " not found");
-        }
+    public ProductDomain delete(Long id) {
+        ProductEntity entity = repository.findById(id).orElseThrow(() ->
+            new ProductNotFoundException("Product with id " + id + " not found")
+        );
 
-        repository.deleteById(id);
+        repository.delete(entity);
+
+        return mapper.toDomain(entity);
     }
 
     @Override
