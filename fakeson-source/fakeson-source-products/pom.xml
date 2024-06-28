@@ -16,7 +16,8 @@
     <packaging>pom</packaging>
 
     <modules>
-        <module>fakeson-source-products-api</module>
-        <module>fakeson-source-products-database</module>
+        <module>fakeson-source-products-domain</module>
+        <module>fakeson-source-products-infrastructure</module>
+        <module>fakeson-source-products-application</module>
     </modules>
 </project>

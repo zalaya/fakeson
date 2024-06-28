@@ -8,11 +8,11 @@
 
     <parent>
         <groupId>xyz.zalaya</groupId>
-        <artifactId>fakeson-source-products-api</artifactId>
+        <artifactId>fakeson-source-products</artifactId>
         <version>${fakeson.version}</version>
     </parent>
 
-    <artifactId>fakeson-source-products-api-infrastructure</artifactId>
+    <artifactId>fakeson-source-products-infrastructure</artifactId>
 
     <dependencies>
         <dependency>
@@ -32,7 +32,7 @@
         </dependency>
         <dependency>
             <groupId>xyz.zalaya</groupId>
-            <artifactId>fakeson-source-products-api-domain</artifactId>
+            <artifactId>fakeson-source-products-domain</artifactId>
             <version>${fakeson.version}</version>
         </dependency>
     </dependencies>

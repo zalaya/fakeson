@@ -12,5 +12,5 @@
         <version>${fakeson.version}</version>
     </parent>
 
-    <artifactId>fakeson-source-products-database</artifactId>
+    <artifactId>fakeson-source-products-domain</artifactId>
 </project>
