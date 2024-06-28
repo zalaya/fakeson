@@ -13,13 +13,14 @@
     <packaging>pom</packaging>
 
     <modules>
-        <module>fakeson-source</module>
         <module>fakeson-scripts</module>
+        <module>fakeson-source</module>
     </modules>
 
     <properties>
         <fakeson.version>0.0.1-SNAPSHOT</fakeson.version>
         <spring-boot.version>3.3.1</spring-boot.version>
         <lombok.version>1.18.32</lombok.version>
+        <mysql.version>8.4.0</mysql.version>
     </properties>
 </project>

@@ -1,11 +1,13 @@
 package xyz.zalaya.mapper;
 
+import org.springframework.stereotype.Component;
 import xyz.zalaya.entity.ProductEntity;
 import xyz.zalaya.model.ProductDomain;
 
 import java.util.List;
 import java.util.stream.Collectors;
 
+@Component
 public class ProductMapper {
 
     public ProductDomain toDomain(ProductEntity entity) {

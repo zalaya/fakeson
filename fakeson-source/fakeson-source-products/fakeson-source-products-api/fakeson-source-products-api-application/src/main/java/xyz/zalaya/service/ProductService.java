@@ -1,6 +1,7 @@
 package xyz.zalaya.service;
 
 import lombok.RequiredArgsConstructor;
+import org.springframework.stereotype.Service;
 import xyz.zalaya.entity.ProductEntity;
 import xyz.zalaya.exception.ProductFoundException;
 import xyz.zalaya.exception.ProductNotFoundException;
@@ -12,6 +13,7 @@ import xyz.zalaya.port.in.GetProductPort;
 import xyz.zalaya.port.in.UpdateProductPort;
 import xyz.zalaya.repository.ProductRepository;
 
+@Service
 @RequiredArgsConstructor
 public class ProductService implements CreateProductPort, GetProductPort, UpdateProductPort, DeleteProductPort {
 

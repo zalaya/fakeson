@@ -1,6 +1,6 @@
-DROP DATABASE IF EXISTS fakeson_source_products;
-CREATE DATABASE fakeson_source_products;
-USE fakeson_source_products;
+DROP DATABASE IF EXISTS fakeson_source;
+CREATE DATABASE fakeson_source;
+USE fakeson_source;
 
 CREATE TABLE products (
     id INT AUTO_INCREMENT PRIMARY KEY,
