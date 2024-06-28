@@ -8,9 +8,14 @@
 
     <parent>
         <groupId>xyz.zalaya</groupId>
-        <artifactId>fakeson-database</artifactId>
+        <artifactId>fakeson-templates</artifactId>
         <version>${fakeson.version}</version>
     </parent>
 
-    <artifactId>fakeson-database-products</artifactId>
+    <artifactId>fakeson-templates-source</artifactId>
+    <packaging>pom</packaging>
+
+    <modules>
+        <module>fakeson-templates-source-module</module>
+    </modules>
 </project>

@@ -12,10 +12,11 @@
         <version>${fakeson.version}</version>
     </parent>
 
-    <artifactId>fakeson-database</artifactId>
+    <artifactId>fakeson-databases</artifactId>
     <packaging>pom</packaging>
 
     <modules>
-        <module>fakeson-database-products</module>
+        <module>fakeson-databases-products</module>
+        <module>fakeson-databases-users</module>
     </modules>
 </project>

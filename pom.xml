@@ -15,7 +15,8 @@
     <modules>
         <module>fakeson-scripts</module>
         <module>fakeson-source</module>
-        <module>fakeson-database</module>
+        <module>fakeson-databases</module>
+        <module>fakeson-templates</module>
     </modules>
 
     <properties>
