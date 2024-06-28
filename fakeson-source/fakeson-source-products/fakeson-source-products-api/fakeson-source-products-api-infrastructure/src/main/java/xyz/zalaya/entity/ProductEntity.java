@@ -17,13 +17,14 @@ public class ProductEntity {
     @Column(name = "id")
     private Long id;
 
-    @Column(name = "name")
+    @Column(name = "name", length = 100)
     private String name;
 
+    @Lob
     @Column(name = "description")
     private String description;
 
-    @Column(name = "price")
+    @Column(name = "price", precision = 10, scale = 2)
     private Double price;
 
 }
