@@ -15,15 +15,33 @@ import xyz.zalaya.repository.ProductRepository;
 
 @Service
 @RequiredArgsConstructor
-public class ProductService implements CreateProductPort, GetProductPort, UpdateProductPort, DeleteProductPort {
+public class ProductService implements GetProductPort, CreateProductPort, UpdateProductPort, DeleteProductPort {
 
     private final ProductRepository repository;
     private final ProductMapper mapper;
 
     @Override
+    public ProductDomain get(Long id) {
+        ProductEntity entity = repository.findById(id).orElseThrow(() ->
+            new ProductNotFoundException("Product with id " + id + " not found")
+        );
+
+        return mapper.toDomain(entity);
+    }
+
+    @Override
     public ProductDomain create(ProductDomain product) {
         if (repository.existsById(product.getId())) {
             throw new ProductFoundException("Product with id " + product.getId() + " found");
+        }
+
+        return mapper.toDomain(repository.save(mapper.toEntity(product)));
+    }
+
+    @Override
+    public ProductDomain update(ProductDomain product) {
+        if (!repository.existsById(product.getId())) {
+            throw new ProductNotFoundException("Product with id " + product.getId() + " not found");
         }
 
         return mapper.toDomain(repository.save(mapper.toEntity(product)));
@@ -38,24 +56,6 @@ public class ProductService implements CreateProductPort, GetProductPort, Update
         repository.delete(entity);
 
         return mapper.toDomain(entity);
-    }
-
-    @Override
-    public ProductDomain get(Long id) {
-        ProductEntity entity = repository.findById(id).orElseThrow(() ->
-            new ProductNotFoundException("Product with id " + id + " not found")
-        );
-
-        return mapper.toDomain(entity);
-    }
-
-    @Override
-    public ProductDomain update(ProductDomain product) {
-        if (!repository.existsById(product.getId())) {
-            throw new ProductNotFoundException("Product with id " + product.getId() + " not found");
-        }
-
-        return mapper.toDomain(repository.save(mapper.toEntity(product)));
     }
 
 }
