@@ -17,7 +17,6 @@
 
     <modules>
         <module>fakeson-source-products</module>
-
     </modules>
 
     <build>
