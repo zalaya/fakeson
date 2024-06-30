@@ -17,7 +17,7 @@
 
     <modules>
         <module>fakeson-source-products</module>
-        <module>fakeson-source-users</module>
+
     </modules>
 
     <build>
