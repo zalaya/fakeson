@@ -1,4 +1,4 @@
-package xyz.zalaya.inbound;
+package xyz.zalaya.service;
 
 import lombok.RequiredArgsConstructor;
 import org.springframework.stereotype.Service;
@@ -8,7 +8,7 @@ import xyz.zalaya.port.outbound.GetProductPort;
 
 @Service
 @RequiredArgsConstructor
-public class GetProductUseCaseAdapter implements GetProductUseCase {
+public class GetProductService implements GetProductUseCase {
 
     private final GetProductPort getProductPort;
 

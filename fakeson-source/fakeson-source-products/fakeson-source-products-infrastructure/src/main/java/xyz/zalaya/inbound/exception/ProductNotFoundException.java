@@ -1,4 +1,4 @@
-package xyz.zalaya.exception;
+package xyz.zalaya.inbound.exception;
 
 public class ProductNotFoundException extends RuntimeException {
 

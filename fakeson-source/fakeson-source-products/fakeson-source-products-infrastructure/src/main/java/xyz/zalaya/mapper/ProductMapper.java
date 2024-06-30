@@ -1,7 +1,7 @@
 package xyz.zalaya.mapper;
 
 import org.springframework.stereotype.Component;
-import xyz.zalaya.entity.ProductEntity;
+import xyz.zalaya.inbound.entity.ProductEntity;
 import xyz.zalaya.model.ProductDomain;
 
 import java.util.List;

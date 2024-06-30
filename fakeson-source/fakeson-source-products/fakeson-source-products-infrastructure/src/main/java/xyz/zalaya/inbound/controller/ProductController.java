@@ -1,4 +1,4 @@
-package xyz.zalaya.controller;
+package xyz.zalaya.inbound.controller;
 
 import lombok.RequiredArgsConstructor;
 import org.springframework.http.ResponseEntity;

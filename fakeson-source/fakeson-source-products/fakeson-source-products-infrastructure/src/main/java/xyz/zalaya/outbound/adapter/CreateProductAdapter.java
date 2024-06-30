@@ -1,16 +1,16 @@
-package xyz.zalaya.outbound;
+package xyz.zalaya.outbound.adapter;
 
 import lombok.RequiredArgsConstructor;
 import org.springframework.stereotype.Component;
-import xyz.zalaya.exception.ProductFoundException;
+import xyz.zalaya.inbound.exception.ProductFoundException;
 import xyz.zalaya.mapper.ProductMapper;
 import xyz.zalaya.model.ProductDomain;
+import xyz.zalaya.outbound.repository.ProductRepository;
 import xyz.zalaya.port.outbound.CreateProductPort;
-import xyz.zalaya.repository.ProductRepository;
 
 @Component
 @RequiredArgsConstructor
-public class CreateProductPortAdapter implements CreateProductPort {
+public class CreateProductAdapter implements CreateProductPort {
 
     private final ProductRepository repository;
     private final ProductMapper mapper;

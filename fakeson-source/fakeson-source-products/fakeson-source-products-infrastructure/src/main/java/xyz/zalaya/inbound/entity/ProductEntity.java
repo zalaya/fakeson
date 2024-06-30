@@ -1,4 +1,4 @@
-package xyz.zalaya.entity;
+package xyz.zalaya.inbound.entity;
 
 import jakarta.persistence.*;
 import lombok.AllArgsConstructor;
