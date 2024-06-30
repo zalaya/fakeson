@@ -35,5 +35,10 @@
             <artifactId>fakeson-source-products-domain</artifactId>
             <version>${fakeson.version}</version>
         </dependency>
+        <dependency>
+            <groupId>xyz.zalaya</groupId>
+            <artifactId>fakeson-source-products-application</artifactId>
+            <version>${fakeson.version}</version>
+        </dependency>
     </dependencies>
 </project>

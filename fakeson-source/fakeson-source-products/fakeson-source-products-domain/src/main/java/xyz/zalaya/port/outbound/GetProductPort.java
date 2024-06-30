@@ -1,4 +1,4 @@
-package xyz.zalaya.port.in;
+package xyz.zalaya.port.outbound;
 
 import xyz.zalaya.model.ProductDomain;
 
