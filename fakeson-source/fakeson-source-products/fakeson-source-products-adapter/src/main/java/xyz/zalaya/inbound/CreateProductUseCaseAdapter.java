@@ -1,14 +1,14 @@
-package xyz.zalaya.service;
+package xyz.zalaya.inbound;
 
 import lombok.RequiredArgsConstructor;
-import org.springframework.stereotype.Component;
+import org.springframework.stereotype.Service;
 import xyz.zalaya.model.ProductDomain;
 import xyz.zalaya.port.inbound.CreateProductUseCase;
 import xyz.zalaya.port.outbound.CreateProductPort;
 
-@Component
+@Service
 @RequiredArgsConstructor
-public class CreateProductService implements CreateProductUseCase {
+public class CreateProductUseCaseAdapter implements CreateProductUseCase {
 
     private final CreateProductPort createProductPort;
 

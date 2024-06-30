@@ -17,6 +17,5 @@
 
     <modules>
         <module>fakeson-databases-products</module>
-        <module>fakeson-databases-users</module>
     </modules>
 </project>
